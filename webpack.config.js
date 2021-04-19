@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const publicPath = '/';
+const publicPath = '/threes/';
 
 module.exports = {
     entry: path.join(__dirname, '/src/index.js'),
@@ -55,7 +55,7 @@ module.exports = {
             loader: 'svg-inline-loader'
           },
           {
-            test: /\.(png|jpg|gif)$/i,
+            test: /\.(png|jpg|gif|blob|jpeg)$/i,
             use: [
               {
                 loader: 'url-loader',

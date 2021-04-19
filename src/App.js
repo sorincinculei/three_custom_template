@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Provider } from "react-redux";
 
 // import theme from "./theme/theme"
-// import AppRouter from './navigation/AppRouter'
+import AppRouter from './navigation/AppRouter'
 
 import store from './model/store'
 
@@ -19,7 +19,7 @@ const App = () => {
         <Provider store={store}>
             <Grommet>
                 <Wrapper>
-                    <div>AAAAAAAA</div>
+                    <AppRouter/>
                 </Wrapper>
             </Grommet>
         </Provider>
